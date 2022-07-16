@@ -1,0 +1,144 @@
+.container {
+  max-width: 1200px;
+  font-family: 'Quando', serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: #f8f3ea;
+  margin: auto;
+}
+
+.navbar {
+  height: 150px;
+  background-color: #e4b866;
+}
+
+header {
+  height: 500px;
+  background-size: cover;
+  position: relative;
+}
+
+.titulo {
+  color: #B28735;
+  font-size: 45px;
+  font-family: 'Quando', serif;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 50px;
+}
+
+.tituloColor { 
+  color: #B28735;
+}
+
+.btn {
+  background-color: #412F26;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.row-inicio {
+  background-image: url(/images/picada1.jpg);
+}
+
+.row {
+  margin: 0px;
+}
+
+#row-elaboraciones img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+#row-nosotros {
+  background-size: cover;
+  padding-top: 100px !important;
+  padding-bottom: 100px !important;
+}
+
+#row-nosotros img {
+  border-radius: 50%;
+  border: 3px double #B28735;
+  width: 400px;
+  height: 400px;
+}
+
+#row-nosotros p {
+  font-size: 16px;
+
+}
+
+#row-precios {
+  font-size: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* CARDS */
+
+
+div [class^="col-"]{
+  padding-left:15px;
+  padding-right:15px;
+}
+.card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.card-title{  
+  font-size:20px;
+  transition:1s;
+  cursor:pointer;
+  text-align: center;
+}
+.card-title i{  
+  font-size:20px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+  
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+
+
